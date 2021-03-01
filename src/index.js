@@ -1,14 +1,21 @@
-
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import Navigation from './Navigation';
 
 const App: () => React$Node = () => {
     return (
-        <NavigationContainer>
-            <Navigation />
-        </NavigationContainer>
+        <>
+            <StatusBar
+                barStyle='light-content'
+                background='#000'
+            />
+            <NavigationContainer>
+                <Navigation />
+            </NavigationContainer>
+        </>
+
     );
 };
 
